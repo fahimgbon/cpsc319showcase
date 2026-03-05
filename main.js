@@ -564,17 +564,11 @@ function setupHeroInteractions() {
   if (!heroSection) return;
 
   if (!prefersReducedMotion) {
-    heroSection.addEventListener("pointermove", (event) => {
-      const rect = heroSection.getBoundingClientRect();
-      const x = ((event.clientX - rect.left) / rect.width) * 100;
-      const y = ((event.clientY - rect.top) / rect.height) * 100;
+    window.addEventListener("pointermove", (event) => {
+      const x = (event.clientX / window.innerWidth) * 100;
+      const y = (event.clientY / window.innerHeight) * 100;
       heroSection.style.setProperty("--mx", `${x}%`);
       heroSection.style.setProperty("--my", `${y}%`);
-    });
-
-    heroSection.addEventListener("pointerleave", () => {
-      heroSection.style.setProperty("--mx", "50%");
-      heroSection.style.setProperty("--my", "45%");
     });
   }
 
