@@ -194,13 +194,18 @@ const storageKeys = {
 };
 
 const projectImageSets = {
+  "benevity-a": ["images/benevityA1.png", "images/benevityA2.png"],
+  "benevity-b": ["images/benevityB1.png", "images/benevityB2.png"],
+  "benevity-c": ["images/benevityC1.png", "images/benevityC2.png"],
   "surrey-a": ["images/surreyA1.png", "images/surreyA2.png"],
   "surrey-b": ["images/surreyB1.png", "images/surreyB2.png"],
   "surrey-c": ["images/surreyC1.png", "images/surreyC2.png"],
   "auntleahs-a": ["images/leahA1.png", "images/leahA2.png"],
   "auntleahs-b": ["images/leahB1.png", "images/leahB2.png"],
+  "auntleahs-c": ["images/leahC1.png", "images/leahC2.png"],
   "feathers-a": ["images/feathersA1.png", "images/feathersA2.png"],
   "feathers-b": ["images/feathersB1.png", "images/feathersB2.png"],
+  "feathers-c": ["images/feathersC1.png", "images/feathersC2.png"],
   "openwebui-a": ["images/openA1.png", "images/openA2.png"],
   "openwebui-b": ["images/openB1.png", "images/openB2.png"],
 };
